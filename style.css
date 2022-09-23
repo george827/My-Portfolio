@@ -1,0 +1,193 @@
+@media (min-width: 400px){
+    body {
+        background: #E5E5E5;
+        background-image: url("img/background-mobile.png");
+        background-size: 100%;
+        background-position: absolute;
+        min-height: fit-content;
+       }
+    
+       nav {
+        margin-left: 8px;
+       }
+       .headline{
+        margin-left: 12px;
+       }
+    .main {
+        display: flex;
+        justify-content: space-between;
+    }
+    .my-logo {
+    width: 76px;
+    height: 20px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    /* Primary/B400 */
+    
+    color: #6070FF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+    .my-menu div {
+        height: 5px;
+        background-color: #6070FF;
+        margin: 5px 0;
+        border-radius: 25px;
+        transition: .5s;
+    }
+    .my-menu {
+        width: 30px;
+        display: block;
+        
+    }
+    
+    
+    .shape-1{
+        /* Ellipse 11 */
+    
+    position: absolute;
+    width: 38.5px;
+    height: 19.25px;
+    left: 3.04px;
+    top: 40.47px;
+    border-top-left-radius: 50%;
+    
+    
+    background: #6070FF;
+    transform: rotate(-156.88deg);
+    }
+    .shape-2{
+    /* Rectangle 7 */
+    
+    position: absolute;
+    width: 26.46px;
+    height: 4.73px;
+    right: 180.18px;
+    top: 100.59px;
+    
+    /* Primary/B400 */
+    background: #6070FF;
+    transform: matrix(0.76, 0.65, 0.65, -0.76, 0, 0);
+    
+    }
+     h2{
+        width: 250px;
+    height: 150px;
+    
+    /* Header / 2 */
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* Neutrals/N800 */
+    
+    color: #172B4D;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+     }
+    
+     .primary{
+        /* Primary Text */
+    
+    
+    width: 300px;
+    height: 146px;
+    
+    /* Body / 2 */
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 150% */
+    
+    
+    /* Neutrals/N600 */
+    
+    color: #344563;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+     }
+    
+     .connect{
+        /* LET’S CONNECT */
+    
+    
+    width: 200px;
+    height: 24px;
+    
+    /* Body / 2 - Bolder */
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    
+    /* Primary/B300 */
+    
+    color: #7F8CFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+     }
+     ul {
+        list-style: none;
+     }
+     
+    
+     a:hover {
+        color: #6070FF;
+     }
+     a:active{
+        color: #2230D2;
+     }
+    
+    
+     .socials{
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+       
+     }
+    }
+     
