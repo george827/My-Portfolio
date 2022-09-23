@@ -33,8 +33,10 @@
     display: flex;
     align-items: center;
     text-align: center;
+    
     /* Primary/B400 */
     color: #6070ff;
+    
     /* Inside auto layout */
     flex: none;
     order: 0;
@@ -97,6 +99,7 @@
     /* Neutrals/N800 */
 
     color: #172b4d;
+    
     /* Inside auto layout */
     flex: none;
     order: 0;
@@ -137,10 +140,13 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;    
+    line-height: 24px;
+    
     /* identical to box height, or 150% */
+    
     /* Primary/B300 */
     color: #7f8cff;
+    
     /* Inside auto layout */
     flex: none;
     order: 0;
@@ -150,6 +156,7 @@
   ul {
     list-style: none;
   }
+  
   a:hover {
     color: #6070ff;
   }
@@ -157,6 +164,7 @@
   a:active {
     color: #2230d2;
   }
+  
   .socials {
     width: 100px;
     display: flex;
