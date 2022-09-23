@@ -1,10 +1,11 @@
-@media (min-width: 400px) {
+@media (min-width: 375px) {
   body {
     background: #e5e5e5;
     background-image: url("img/background-mobile.png");
     background-size: 100%;
     background-position: absolute;
     min-height: fit-content;
+    min-width: 375px;
   }
 
   nav {
@@ -16,6 +17,7 @@
   }
 
   .main {
+    width: 375px;
     display: flex;
     justify-content: space-between;
   }
@@ -56,33 +58,19 @@
     display: block;
   }
 
-  .shape-1 {
-    /* Ellipse 11 */
+  .headline {
+    background-image: url("img/header-shapes\ mobile.png");
+    background-repeat: no-repeat;
     position: absolute;
-    width: 38.5px;
-    height: 19.25px;
-    left: 3.04px;
-    top: 40.47px;
-    border-top-left-radius: 50%;
-    background: #6070ff;
-    transform: rotate(-156.88deg);
+    width: 462px;
+    height: 587.15px;
+    left: 0px;
+    top: 104px;
   }
 
-  .shape-2 {
-    /* Rectangle 7 */
-
-    position: absolute;
-    width: 26.46px;
-    height: 4.73px;
-    right: 180.18px;
-    top: 100.59px;
-
-    /* Primary/B400 */
-    background: #6070ff;
-    transform: matrix(0.76, 0.65, 0.65, -0.76, 0, 0);
-  }
-
-  h2 {
+  .head1 {
+    margin-top: 114px;
+    margin-left: 24px;
     width: 250px;
     height: 150px;
 
@@ -165,9 +153,21 @@
     color: #2230d2;
   }
 
-  .socials {
-    width: 100px;
-    display: flex;
-    justify-content: space-around;
+  a {
+    text-decoration: none;
   }
+.icons {
+  width: 170.17px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  order: 3;
+  flex-grow: 0;
+}
+
 }
