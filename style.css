@@ -6,6 +6,7 @@
     background-position: absolute;
     min-height: fit-content;
     min-width: 375px;
+    background-repeat: no-repeat;
   }
 
   nav {
