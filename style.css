@@ -1,0 +1,172 @@
+@media (min-width: 375px) {
+  body {
+    background: #e5e5e5;
+    background-image: url("img/background-mobile.png");
+    background-size: 100%;
+    background-position: absolute;
+    min-height: fit-content;
+    min-width: 375px;
+    background-repeat: no-repeat;
+  }
+
+  nav {
+    margin-left: 8px;
+  }
+
+  .main {
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .my-logo {
+    width: 76px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    /* identical to box height, or 111% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Primary/B400 */
+    color: #6070ff;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .my-menu div {
+    height: 5px;
+    background-color: #6070ff;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+
+  .my-menu {
+    width: 30px;
+    display: block;
+  }
+
+  .headline {
+    margin-left: 12px;
+    background-image: url("img/header-shapes\ mobile.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 462px;
+    height: 587.15px;
+    left: 1px;
+    top: 104px;
+  }
+
+  .head1 {
+    margin-top: 114px;
+    margin-left: 24px;
+    width: 250px;
+    height: 150px;
+
+    /* Header / 2 */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+
+    /* or 130% */
+    display: flex;
+    align-items: center;
+
+    /* Neutrals/N800 */
+
+    color: #172b4d;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .primary {
+    /* Primary Text */
+    width: 300px;
+    height: 146px;
+
+    /* Body / 2 */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    /* or 150% */
+
+    /* Neutrals/N600 */
+
+    color: #344563;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .connect {
+    /* LET’S CONNECT */
+
+    width: 200px;
+    height: 24px;
+
+    /* Body / 2 - Bolder */
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+
+    /* Primary/B300 */
+    color: #7f8cff;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #6070ff;
+  }
+
+  a:active {
+    color: #2230d2;
+  }
+
+  .icons {
+    width: 170.17px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    order: 3;
+    flex-grow: 0;
+  }
+}
