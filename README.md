@@ -9,6 +9,20 @@
 - html
 - css
 
+## Getting Started
+
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+### Setup
+
+### Usage
+
+### Run tests
+
+### Deployment
 
 
 ## Authors
