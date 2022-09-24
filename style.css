@@ -142,7 +142,7 @@
   ul {
     list-style: none;
   }
-  
+
   a {
     text-decoration: none;
   }
@@ -155,18 +155,17 @@
     color: #2230d2;
   }
 
-.icons {
-  width: 170.17px;
-  height: 20px;
-  margin-top: 20px;
-  margin-left: -30px;
-}
-.socials {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  order: 3;
-  flex-grow: 0;
-}
-
+  .icons {
+    width: 170.17px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    order: 3;
+    flex-grow: 0;
+  }
 }
