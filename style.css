@@ -95,11 +95,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-
-    /* or 150% */
-
-    /* Neutrals/N600 */
-
     color: #344563;
 
     /* Inside auto layout */
@@ -137,11 +132,6 @@
     order: 0;
     flex-grow: 0;
   }
-
-  ul {
-    list-style: none;
-  }
-
   a {
     text-decoration: none;
   }
@@ -176,17 +166,15 @@
     width: 375px;
     border-radius: 16px;
     padding: 16px;
-    background: #ffffff;
+    background: white;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
     gap: 12px;
   }
 
   body {
-    font-family: "Poppins";
     background: #e5e5e5;
   }
 
@@ -230,7 +218,6 @@
     margin-top: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
-    display: flex;
     height: 32px;
     min-width: 310px;
     align-items: center;
@@ -243,6 +230,7 @@
     padding: 5px;
     order: 1;
   }
+  
   .counter {
     height: 10px;
     margin-top: 8px;
@@ -252,9 +240,9 @@
   .tags {
     height: 24px;
     width: 224px;
-    left: 0px;
     top: 200px;
   }
+  
   .canop {
     color: #020303;
   }
@@ -269,12 +257,14 @@
     justify-content: space-between;
     column-gap: 10px;
   }
+  
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     font-size: 14px;
+    list-style: none;
   }
 
   a:link {
@@ -291,12 +281,8 @@
     flex-direction: row;
     align-items: center;
     padding: 4px 12px;
-
     width: 53px;
     height: 24px;
-
-    /* Primary/B50 */
-
     background: #ebebff;
     border-radius: 8px;
 
@@ -310,21 +296,16 @@
   .action {
     height: 72px;
     width: 295px;
-    left: 0px;
     margin-top: 35px;
   }
 
   .normal-btn {
     margin-left: 10px;
     box-sizing: border-box;
-
-    /* Auto layout */
-
     display: flex;
     align-items: center;
     padding: 12px;
     gap: 10px;
-
     position: absolute;
     width: 124px;
     height: 48px;
@@ -340,7 +321,6 @@
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-family: "Poppins";
     font-style: normal;
   }
 
@@ -351,6 +331,7 @@
     height: 1000px;
     margin-top: 50px;
   }
+  
   .language {
     margin-left: 20px;
     height: 24px;
@@ -390,9 +371,7 @@
     align-items: center;
     margin-top: 20px;
     margin-left: 5px;
-    line-height: 20px;
     justify-content: space-between;
-    align-items: center;
     color: #06080c;
   }
 
@@ -410,21 +389,20 @@
     font-weight: 500;
     font-size: 26px;
     line-height: 24px;
-    color: #000000;
+    color: black;
     margin-top: 10px;
   }
+  
   .line {
     height: 1px;
     background: #dfe1e6;
     width: 300px;
     margin-left: 10px;
   }
-
-  /*to be removed later */
+  
   .headline-2 {
     width: 462px;
     height: 587.15px;
-    left: 0px;
     top: 104px;
   }
 
@@ -443,9 +421,6 @@
     /* or 130% */
     display: flex;
     align-items: center;
-
-    /* Neutrals/N800 */
-
     color: #172b4d;
   }
 
