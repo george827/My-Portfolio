@@ -230,7 +230,7 @@
     padding: 5px;
     order: 1;
   }
-  
+
   .counter {
     height: 10px;
     margin-top: 8px;
@@ -242,7 +242,7 @@
     width: 224px;
     top: 200px;
   }
-  
+
   .canop {
     color: #020303;
   }
@@ -257,7 +257,7 @@
     justify-content: space-between;
     column-gap: 10px;
   }
-  
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -331,7 +331,7 @@
     height: 1000px;
     margin-top: 50px;
   }
-  
+
   .language {
     margin-left: 20px;
     height: 24px;
@@ -392,14 +392,14 @@
     color: black;
     margin-top: 10px;
   }
-  
+
   .line {
     height: 1px;
     background: #dfe1e6;
     width: 300px;
     margin-left: 10px;
   }
-  
+
   .headline-2 {
     width: 462px;
     height: 587.15px;
