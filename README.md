@@ -27,7 +27,7 @@ To get a copy running locally
 - Type git clone "the link to the repository"
 
 ### Deployment
-- run the project by opening the index file with your browser 
+- Run the project by opening the index file with your browser 
 
 ## Authors
 
