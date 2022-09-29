@@ -16,14 +16,18 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Web browser (eg Google Chrome)
+- A code editor (eg VScode)
+
 ### Setup
-
-### Usage
-
-### Run tests
+To get a copy running locally
+- Click on "**Code**" (dropdown list)
+- Then copy the link
+- Open your git bash
+- Type git clone "the link to the repository"
 
 ### Deployment
-
+- run the project by opening the index file with your browser 
 
 ## Authors
 

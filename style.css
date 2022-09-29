@@ -1,9 +1,17 @@
 @media (min-width: 375px) {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+  body {
+    background: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+  }
+
   .land {
     background-image: url("img/background-mobile.png");
     height: 750px;
-    min-width: 375px;
+    width: 385px;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   nav {
@@ -138,14 +146,6 @@
     text-decoration: none;
   }
 
-  a:hover {
-    color: #6070ff;
-  }
-
-  a:active {
-    color: #2230d2;
-  }
-
   .icons {
     width: 170.17px;
     height: 20px;
@@ -176,10 +176,6 @@
     gap: 12px;
   }
 
-  body {
-    background: #e5e5e5;
-  }
-
   .head-one {
     /* Project Title */
     width: 295px;
@@ -195,21 +191,14 @@
   }
 
   .doc {
+    margin-bottom: 8px;
     width: 295px;
     height: 76px;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-
-    /* Neutrals/N600 */
     color: #344563;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
   }
 
   ul li {
@@ -226,9 +215,9 @@
   }
 
   .grid-item {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
     padding: 5px;
     order: 1;
   }
@@ -241,7 +230,7 @@
 
   .tags {
     height: 24px;
-    width: 224px;
+    width: 203px;
     top: 200px;
   }
 
@@ -258,6 +247,7 @@
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     column-gap: 10px;
+    align-items: center;
   }
 
   ul {
@@ -274,62 +264,76 @@
   }
 
   .btn {
-    /* Tag */
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 4px 12px;
+    padding: 3px 12px;
     width: 53px;
     height: 24px;
     background: #ebebff;
     border-radius: 8px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    color: #6070ff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
   }
 
-  .action {
-    height: 72px;
-    width: 295px;
-    margin-top: 35px;
-  }
-
-  .normal-btn {
-    margin-left: 10px;
+  .btn-main {
+    margin-top: 20px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     padding: 12px;
     gap: 10px;
-    position: absolute;
-    width: 124px;
+    width: 162px;
     height: 48px;
-
-    /* Primary/B400 */
-
     border: 1px solid #6070ff;
     border-radius: 8px;
+    color: #396df2;
+    background-color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 
-  .btn-text {
-    color: #396df2;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-style: normal;
+  .btn-main:enabled {
+    border: 1px solid #6070ff;
+    background-color: white;
+  }
+
+  .btn-main:hover {
+    background: #6070ff;
+    color: white;
+    box-shadow: 8px 16px rgba(64, 83, 252, 0.24);
+  }
+
+  .btn-main:disabled {
+    border: 1px solid #c1c7d0;
+    color: #5e6c84;
+  }
+
+  .btn-main:active {
+    background: #2230d2;
+    color: white;
+  }
+
+  #reume {
+    width: 166px;
+    height: 48px;
   }
 
   .about {
     background-image: url("img/Base-about-my-self.png");
     background-repeat: no-repeat;
     width: 375px;
-    height: 1000px;
+    height: 1125.15px;
     margin-top: 50px;
   }
 
@@ -374,6 +378,16 @@
     margin-left: 5px;
     justify-content: space-between;
     color: #06080c;
+  }
+
+  #skills {
+    width: 327px;
+    height: 464.15px;
+  }
+
+  #skill {
+    display: grid;
+    gap: 15px;
   }
 
   .frame-8 {
