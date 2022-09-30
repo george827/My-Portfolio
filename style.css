@@ -7,9 +7,10 @@
   }
 
   .land {
+    display: grid;
     background-image: url("img/background-mobile.png");
     height: 750px;
-    width: 385px;
+    width: 375px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -27,6 +28,7 @@
 
   .my-logo {
     margin-top: 30px;
+    margin-left: 24px;
     width: 76px;
     height: 20px;
     font-style: normal;
@@ -42,11 +44,6 @@
 
     /* Primary/B400 */
     color: #6070ff;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 
   .my-menu div {
@@ -60,10 +57,10 @@
   .my-menu {
     width: 30px;
     display: block;
+    margin-top: 25px;
   }
 
   .headline {
-    margin-left: 12px;
     background-image: url("img/header-shapes\ mobile.png");
     background-repeat: no-repeat;
     position: absolute;
@@ -73,7 +70,7 @@
 
   .head1 {
     margin-top: 100px;
-    margin-left: 24px;
+    margin-left: 10px;
     width: 250px;
     height: 150px;
 
@@ -82,26 +79,21 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-
-    /* or 130% */
     display: flex;
     align-items: center;
-
-    /* Neutrals/N800 */
-
     color: #172b4d;
   }
 
   .primary {
     /* Primary Text */
     margin-left: 10px;
-    width: 300px;
+    width: 327px;
     height: 146px;
 
     /* Body / 2 */
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     color: #344563;
 
@@ -161,19 +153,29 @@
     flex-grow: 0;
   }
 
-  /* from here */
+  #main-works {
+    display: grid;
+    width: 375px;
+    justify-content: center;
+  }
+
+  /* the works section */
   .snapshot1 {
     margin-top: 30px;
-    height: 570px;
-    width: 375px;
+    height: 596px;
+    width: 327px;
     border-radius: 16px;
-    padding: 16px;
     background: white;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 12px;
+  }
+
+  .image-po {
+    width: 295px;
+    height: 220px;
   }
 
   .head-one {
@@ -185,8 +187,6 @@
     font-size: 32px;
     line-height: 44px;
     margin-top: -20px;
-
-    /* Neutrals/N800 */
     color: #172b4d;
   }
 
@@ -206,7 +206,7 @@
   }
 
   .grid-container {
-    margin-top: 30px;
+    margin-top: -5px;
     display: grid;
     grid-template-columns: auto auto auto;
     height: 32px;
@@ -324,9 +324,10 @@
     color: white;
   }
 
-  #reume {
+  #resume {
     width: 166px;
     height: 48px;
+    margin-left: 10px;
   }
 
   .about {
@@ -335,15 +336,15 @@
     width: 375px;
     height: 1125.15px;
     margin-top: 50px;
+    display: grid;
+    padding: 12px;
   }
 
   .language {
-    margin-left: 20px;
     height: 24px;
-    width: 237px;
+    width: 270px;
     color: #0f0d0d;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
     justify-content: space-between;
     font-size: 20px;
   }
@@ -374,8 +375,7 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 15px;
     justify-content: space-between;
     color: #06080c;
   }
@@ -383,6 +383,13 @@
   #skills {
     width: 327px;
     height: 464.15px;
+    margin-left: 10px;
+  }
+
+  .down {
+    width: 14px;
+    height: 9px;
+    margin-top: 30px;
   }
 
   #skill {
@@ -397,7 +404,8 @@
 
   .frameworks {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 270px;
   }
 
   .frames {
@@ -423,7 +431,6 @@
 
   .head-2 {
     margin-top: 30px;
-    margin-left: 24px;
     width: 250px;
     height: 150px;
 
