@@ -24,7 +24,7 @@ To get a copy running locally
 - Click on "**Code**" (dropdown list)
 - Then copy the link
 - Open your git bash
-- Type git clone "the link to the repository"
+- Type `git clone` "the link to the repository"
 
 ### Deployment
 - run the project by opening the index file with your browser 
