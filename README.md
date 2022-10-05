@@ -35,6 +35,11 @@ To get a copy running locally
 
 - GitHub: [@george827](https://github.com/george827)
 
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+👤 **Faisher**
+- GitHub: [@Robison-faike123](https://github.com/Robison-faike123)
 
 ## Acknowledgments
 - Inspiration
