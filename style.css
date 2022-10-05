@@ -462,9 +462,85 @@
   }
 
   /* contact form */
- 
 
 
+  .contact {
+    margin-top: -100px;
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    width: 375px;
+    height: 779px;
+    border-top-left-radius: 100px;
+    background: #6070ff;
+    background-image: url("img/contact_form_shapes.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
 
-  
+  .head-contact {
+    margin-top: 100px;
+    width: 327px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .contact_p {
+    margin-top: -50px;
+    width: 327px;
+    height: 102px;
+    color: #ebebff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .in-put {
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    width: 327px;
+    height: 48px;
+    margin-top: 20px;
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+
+  .mess {
+    width: 300px;
+    height: 170px;
+    border-radius: 8px;
+    margin-top: 18px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #b3bac5;
+    margin-left: 8px;
+  }
+
+  #touch {
+    width: 166px;
+    height: 48px;
+    margin-left: 10px;
+  }
+
+  #touch:hover {
+    background: #9ba4f0;
+    color: white;
+    box-shadow: 8px 16px rgba(64, 83, 252, 0.24);
+  }
+
+  #touch:active {
+    background: #2230d2;
+    color: white;
+  }
 }
