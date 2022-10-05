@@ -38,6 +38,7 @@ To get a copy running locally
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
 👤 **Faisher**
 - GitHub: [@Robison-faike123](https://github.com/Robison-faike123)
 
