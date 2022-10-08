@@ -601,6 +601,8 @@ a:link {
     width: 100%;
     display: grid;
     justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 
   .snapshot1 {
@@ -618,6 +620,7 @@ a:link {
     width: 90%;
     height: 90%;
     margin: 20px;
+    padding: 20px;
   }
 
   .image-po {
@@ -640,9 +643,13 @@ a:link {
   }
 
   .sect2-about {
-    margin-top: 60px;
+    margin-top: 100px;
     width: auto;
     max-width: 60%;
+  }
+
+  #more {
+    height: 60px;
   }
 
   .language {
@@ -713,7 +720,8 @@ a:link {
     width: 100%;
 
     /* margin-left: 20%; */
-    margin-top: 20px;
+    margin-top: -60px;
+    padding-left: 30px;
     justify-content: start;
   }
 
@@ -766,6 +774,7 @@ a:link {
 
   .sect1_about {
     width: auto;
+    margin-top: 50px;
   }
 
   .main-1 {
