@@ -193,6 +193,23 @@ a {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
+.doc:hover {
+  font-size: 20px;
+}
+
+.twit {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.twit:hover {
+  width: 110%;
+  height: 110%;
+  transform: rotate(-0.25turn);
 }
 
 ul li {
