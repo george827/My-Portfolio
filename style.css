@@ -193,6 +193,14 @@ a {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+  
+}
+.doc:hover {
+  font-size: 36px;
+
 }
 
 ul li {
