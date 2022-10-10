@@ -50,3 +50,6 @@ Contributions, issues, and feature requests are welcome!
 ## 📝 License
 
 This project is [MIT](https://github.com/george827/My-Portfolio/blob/main/LICENSE) licensed.
+
+## readme update
+https://george827.github.io/My-Portfolio/
