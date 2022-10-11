@@ -4,6 +4,7 @@
 body {
   background: #e5e5e5;
   font-family: 'Poppins', sans-serif;
+  font-display: optional;
 }
 
 .land {
@@ -13,12 +14,6 @@ body {
   width: 375px;
   border-bottom-left-radius: 80px;
 }
-
-/* nav {
-    margin-top: 10px;
-    margin-right: 20px;
-    height: 100px;
-  } */
 
 .main-1 {
   width: 95%;
@@ -161,6 +156,14 @@ a {
 }
 
 #rub {
+  display: none;
+}
+
+#rub1 {
+  display: none;
+}
+
+#rub2 {
   display: none;
 }
 
@@ -378,7 +381,7 @@ a:link {
   border-radius: 8px;
 }
 
-#icon-text {
+.icon-text {
   font-weight: 500;
   font-size: 20px;
   font-style: bold;
@@ -538,6 +541,10 @@ a:link {
   margin-left: 8px;
 }
 
+#invisible {
+  display: none;
+}
+
 #touch {
   width: 166px;
   height: 48px;
@@ -557,6 +564,11 @@ a:link {
 
 .space {
   display: none;
+}
+
+img {
+  width: auto;
+  height: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -693,7 +705,7 @@ a:link {
     margin-left: 5px;
   }
 
-  #icon-text {
+  .icon-text {
     color: #253858;
     text-align: start;
     font-style: normal;
@@ -762,6 +774,16 @@ a:link {
   }
 
   #rub {
+    display: flex;
+    width: auto;
+  }
+
+  #rub1 {
+    display: flex;
+    width: auto;
+  }
+
+  #rub2 {
     display: flex;
     width: auto;
   }
