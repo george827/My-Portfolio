@@ -4,6 +4,7 @@
 body {
   background: #e5e5e5;
   font-family: 'Poppins', sans-serif;
+  font-display: optional;
 }
 
 .land {
@@ -155,6 +156,14 @@ a {
 }
 
 #rub {
+  display: none;
+}
+
+#rub1 {
+  display: none;
+}
+
+#rub2 {
   display: none;
 }
 
@@ -557,6 +566,12 @@ a:link {
   display: none;
 }
 
+img {
+  width: auto;
+  height: auto;
+}
+
+
 @media only screen and (min-width: 768px) {
   body {
     width: 100%;
@@ -760,6 +775,16 @@ a:link {
   }
 
   #rub {
+    display: flex;
+    width: auto;
+  }
+
+  #rub1 {
+    display: flex;
+    width: auto;
+  }
+
+  #rub2 {
     display: flex;
     width: auto;
   }
