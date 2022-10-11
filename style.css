@@ -14,12 +14,6 @@ body {
   border-bottom-left-radius: 80px;
 }
 
-/* nav {
-    margin-top: 10px;
-    margin-right: 20px;
-    height: 100px;
-  } */
-
 .main-1 {
   width: 95%;
   display: flex;
@@ -536,6 +530,10 @@ a:link {
   line-height: 24px;
   color: #b3bac5;
   margin-left: 8px;
+}
+
+#invisible {
+  display: none;
 }
 
 #touch {
