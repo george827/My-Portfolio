@@ -372,7 +372,7 @@ a:link {
   border-radius: 8px;
 }
 
-#icon-text {
+.icon-text {
   font-weight: 500;
   font-size: 20px;
   font-style: bold;
@@ -691,7 +691,7 @@ a:link {
     margin-left: 5px;
   }
 
-  #icon-text {
+  .icon-text {
     color: #253858;
     text-align: start;
     font-style: normal;
