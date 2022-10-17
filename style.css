@@ -21,12 +21,23 @@ body {
   height: auto;
 }
 
+nav {
+  z-index: 6;
+}
+
 .nav-link {
   cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  z-index: 3;
 }
 
 .my-menu-nav {
-  /* display: none; */
   position: fixed;
   left: -100%;
   top: 70px;
@@ -36,7 +47,7 @@ body {
 }
 
 .my-menu-nav.active {
-  left: 40%;
+  left: 30px;
 }
 
 .my-logo {
@@ -64,6 +75,7 @@ body {
   display: block;
   margin-top: 25px;
   cursor: pointer;
+  z-index: 4;
 }
 
 .my-menu.active .menu_bar:nth-child(2) {
@@ -72,10 +84,28 @@ body {
 
 .my-menu.active .menu_bar:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
+  background-color: #fff;
 }
 
 .my-menu.active .menu_bar:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.my-menu.active {
+  margin-left: 300px;
+}
+
+.nav.active {
+  width: 375px;
+  height: 812px;
+  background: #6070ff;
+  position: absolute;
+  left: 5px;
+  right: 0;
+  top: 0;
+  opacity: 0.91;
+  align-items: center;
 }
 
 .menu-expand {
@@ -95,8 +125,7 @@ body {
   margin-left: 10px;
   width: 250px;
   height: 150px;
-
-  /* Header / 2 */
+  z-index: 1;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -618,6 +647,7 @@ a:link {
     background-image: url("img/Header-bg.png");
     background-position: center center;
     background-size: contain;
+    z-index: 1;
   }
 
   .primary {
