@@ -14,21 +14,30 @@ body {
   border-bottom-left-radius: 80px;
 }
 
-/* nav {
-    margin-top: 10px;
-    margin-right: 20px;
-    height: 100px;
-  } */
-
 .main-1 {
   width: 95%;
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: auto;
+}
+
+.nav-link {
+  cursor: pointer;
 }
 
 .my-menu-nav {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  z-index: 2;
+}
+
+
+.my-menu-nav.active {
+  left: 40%;
 }
 
 .my-logo {
@@ -43,7 +52,7 @@ body {
   color: #6070ff;
 }
 
-.my-menu div {
+.menu_bar {
   height: 5px;
   background-color: #6070ff;
   margin: 5px 0;
@@ -51,11 +60,14 @@ body {
   transition: 0.5s;
 }
 
-.my-menu {
-  width: 30px;
-  display: block;
-  margin-top: 25px;
-}
+
+/* paste here  */
+
+
+
+
+
+
 
 .headline {
   background-image: url("img/header-shapes\ mobile.png");
@@ -209,7 +221,6 @@ a {
 .twit:hover {
   width: 110%;
   height: 110%;
-  transform: rotate(-0.25turn);
 }
 
 ul li {
@@ -567,12 +578,15 @@ a:link {
   }
 
   .my-menu-nav {
+    left: 65%;
     width: 250px;
-    margin-right: 80px;
+    /* margin-right: 80px; */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     color: #344563;
-    margin-top: 40px;
+    margin-top: -60px;
+    cursor: pointer;
   }
 
   .land {
