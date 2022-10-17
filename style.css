@@ -61,7 +61,31 @@ body {
 }
 
 
-/* paste here  */
+.my-menu {
+  width: 30px;
+  display: block;
+  margin-top: 25px;
+  cursor: pointer;
+  /* position: fixed; */
+  /* left: 330px; */
+}
+
+
+.my-menu.active .menu_bar:nth-child(2){
+  opacity: 0;
+}
+
+.my-menu.active .menu_bar:nth-child(1){
+  transform: translateY(10px) rotate(45deg);
+}
+
+.my-menu.active .menu_bar:nth-child(3){
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.menu-expand {
+  margin: 16px 0;
+}
 
 
 
