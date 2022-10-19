@@ -821,6 +821,8 @@ ul {
     padding-left: 0%;
   }
 
+  /* cards */
+
   .card1:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
