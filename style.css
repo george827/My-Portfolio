@@ -821,7 +821,31 @@ ul {
     padding-left: 0%;
   }
 
-  /* paste here */
+  .card1:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 58vh;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #dfe1e6;
+  }
+
+  .card1:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 58vh;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #dfe1e6;
+  }
+
+  .card1 img {
+    flex: 1;
+  }
 
   div.elements1 {
     flex: 1;
