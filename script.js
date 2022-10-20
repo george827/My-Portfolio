@@ -146,3 +146,21 @@ project.forEach((projects) => {
     });
   });
 });
+
+// validate contanct
+
+const form = document.querySelector('#form_contact');
+
+const email = document.querySelector('#email');
+
+const errorMsg = document.querySelector('#errorMsg');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    email.classList.add('active');
+    errorMsg.innerText = 'Please enter the e-mail in lowercase';
+  }
+});

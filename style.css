@@ -646,6 +646,21 @@ ul {
   background-repeat: no-repeat;
 }
 
+#email.active {
+  border: 2px solid #ba181b;
+  color: #ba181b;
+  margin-bottom: 0;
+}
+
+#errorMsg {
+  font-size: 16px;
+  color: #ba181b;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  align-self: flex-start;
+}
+
 .head-contact {
   margin-top: 100px;
   width: 100%;
