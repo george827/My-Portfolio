@@ -150,9 +150,8 @@ project.forEach((projects) => {
 // validate contanct
 
 const form = document.querySelector('#form_contact');
-const formName = document.querySelector('#name');
+
 const email = document.querySelector('#email');
-const formMessage = document.querySelector('#message');
 
 const errorMsg = document.querySelector('#errorMsg');
 
