@@ -645,6 +645,7 @@ ul {
   background-position: right;
   background-repeat: no-repeat;
 }
+
 #email.active {
   border: 2px solid #ba181b;
   color: #ba181b;
