@@ -8,6 +8,7 @@
 
 - html
 - css
+- javascript
 
 ## Getting Started
 
