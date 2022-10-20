@@ -83,9 +83,9 @@ project.forEach((projects) => {
       <h2 class="head-one">${projects.title1}</h2>
       <ul class="highlights">
           <li class="canop">CANOPY</li>
-          <li> <img class="counter" src="img/counter.png" alt="counter">  </li>
+          <li> <img class="counter" src="./img/counter.png" alt="counter">  </li>
           <li>Back End Dev</li>
-          <li> <img class="counter" src="img/counter.png" alt="counter"> </li>
+          <li> <img class="counter" src="./img/counter.png" alt="counter"> </li>
           <li>2015</li>
       </ul>
       <p class="doc">${projects.description}</p>

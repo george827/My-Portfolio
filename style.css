@@ -10,7 +10,7 @@ body {
   display: grid;
   background: #fff;
   height: 750px;
-  width: 375px;
+  width: 100%;
   border-bottom-left-radius: 80px;
 }
 
@@ -94,11 +94,11 @@ nav {
 }
 
 .my-menu.active {
-  margin-left: 300px;
+  margin-left: 80%;
 }
 
 .nav.active {
-  width: 375px;
+  width: 100%;
   height: 812px;
   background: #6070ff;
   position: absolute;
@@ -116,14 +116,18 @@ nav {
 .headline {
   background-image: url("img/header-shapes\ mobile.png");
   background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  width: 462px;
+  width: 97%;
   height: 587.15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .head1 {
-  margin-top: 100px;
-  margin-left: 10px;
+  margin-top: 80px;
+  margin-left: 5%;
   width: 250px;
   height: 150px;
   z-index: 1;
@@ -137,8 +141,9 @@ nav {
 }
 
 .primary {
-  margin-left: 10px;
-  width: 327px;
+  margin-left: 7%;
+  margin-right: 10%;
+  width: 80%;
   height: 146px;
   font-style: normal;
   font-weight: 400;
@@ -147,10 +152,14 @@ nav {
   color: #344563;
 }
 
+#connect-about {
+  margin-left: 3%;
+}
+
 .connect {
   /* LET’S CONNECT */
   margin-bottom: -10px;
-  margin-left: 10px;
+  margin-left: 7%;
   width: 200px;
   height: 24px;
   font-style: normal;
@@ -171,7 +180,7 @@ a {
   width: 170.17px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 5%;
 }
 
 .socials {
@@ -184,11 +193,11 @@ a {
 
 .works_section {
   display: grid;
-  width: 375px;
+  width: 100%;
   justify-items: center;
   padding-top: 20%;
   padding-bottom: 10%;
-  row-gap: 100px;
+  row-gap: 50px;
 }
 
 .carImg {
@@ -210,6 +219,7 @@ a {
   max-width: 80%;
   background-color: #fff;
   border: 1px solid #dfe1e6;
+  height: auto;
 }
 
 .card1:nth-child(even) {
@@ -239,12 +249,11 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 15%;
+  margin-top: 5%;
   color: #172b4d;
 }
 
 .doc {
-  margin-bottom: 10%;
   width: 295px;
   height: 76px;
   font-style: normal;
@@ -253,12 +262,6 @@ a {
   line-height: 24px;
   color: #344563;
   transition-property: font-size;
-  transition-duration: 4s;
-  transition-delay: 2s;
-}
-
-.doc:hover {
-  font-size: 20px;
 }
 
 .twit {
@@ -383,6 +386,7 @@ ul {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-left: 3%;
 }
 
 .btn-main:enabled {
@@ -434,13 +438,9 @@ ul {
   z-index: 5;
 }
 
-.popup-window::-webkit-scrollbar {
-  display: none;
-}
-
 .about {
   background: #fff;
-  width: 375px;
+  width: 100%;
   height: 1263px;
   margin-top: 50px;
   border-top-right-radius: 150px;
@@ -522,6 +522,10 @@ ul {
   margin-top: 10px;
 }
 
+#about_p {
+  margin-left: 3%;
+}
+
 .line {
   height: 1px;
   background: #dfe1e6;
@@ -550,6 +554,7 @@ ul {
 
 .head-2 {
   margin-top: 30px;
+  margin-left: 3%;
   width: 250px;
   height: 150px;
   font-style: normal;
@@ -574,6 +579,7 @@ ul {
   justify-content: space-between;
   order: 3;
   flex-grow: 0;
+  margin-left: 10%;
 }
 
 .popup-content {
@@ -619,7 +625,7 @@ ul {
   display: grid;
   gap: 5px;
   justify-content: center;
-  width: 375px;
+  width: 100%;
   height: 779px;
   border-top-left-radius: 100px;
   background: #6070ff;
@@ -630,7 +636,7 @@ ul {
 
 .head-contact {
   margin-top: 100px;
-  width: 327px;
+  width: 100%;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -708,9 +714,8 @@ ul {
 
   .my-menu-nav {
     position: relative;
-
-    /* left: 5%; */
     width: 250px;
+    left: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -757,7 +762,7 @@ ul {
   }
 
   .primary {
-    width: 100%;
+    width: 80%;
     font-size: 20px;
     line-height: 28px;
   }
@@ -798,10 +803,6 @@ ul {
     padding: 2% 2% 10% 2%;
     top: 20px;
     z-index: 5;
-  }
-
-  .popup-window::-webkit-scrollbar {
-    display: none;
   }
 
   .works_section {
@@ -1013,6 +1014,7 @@ ul {
   .doc {
     width: 80%;
     height: auto;
+    margin-bottom: 10%;
   }
 
   .sect1_about {
