@@ -220,5 +220,27 @@ function fillForm() {
 }
 fillForm();
 
+const userData = {};
+
+userMessage.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
+});
+
+email.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
+});
+
+userName.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
+});
 
 
