@@ -164,3 +164,79 @@ form.addEventListener('submit', (event) => {
     errorMsg.innerText = 'Please enter the e-mail in lowercase';
   }
 });
+
+// preserve data
+const userName = document.querySelector('#name');
+const userMessage = document.querySelector('#message');
+
+const storage = window.localStorage;
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+    // everything except Firefox
+      e.code === 22
+          // Firefox
+          || e.code === 1014
+          || e.name === 'QuotaExceededError'
+          // Firefox
+          || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+          // acknowledge QuotaExceededError only if there's something already stored
+          && (storage && storage.length !== 0);
+  }
+}
+
+function retrieveData() {
+  if (storageAvailable('localStorage')) {
+    const userDataString = storage.getItem('formUserData');
+    const formUserData = JSON.parse(userDataString);
+    return formUserData;
+  }
+  return false;
+}
+
+function fillForm() {
+  const formUserData = retrieveData();
+  if (formUserData) {
+    if (formUserData.name) {
+      userName.value = formUserData.name;
+    }
+    if (formUserData.email) {
+      email.value = formUserData.email;
+    }
+    if (formUserData.message) {
+      userMessage.value = formUserData.message;
+    }
+  }
+}
+fillForm();
+
+const userData = {};
+
+userMessage.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
+});
+
+email.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
+});
+
+userName.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
+});
