@@ -169,29 +169,27 @@ form.addEventListener('submit', (event) => {
 const userName = document.querySelector('#name');
 const userMessage = document.querySelector('#message');
 
-
 const storage = window.localStorage;
 
 function storageAvailable(type) {
   let storage;
   try {
-      storage = window[type];
-      const x = '__storage_test__';
-      storage.setItem(x, x);
-      storage.removeItem(x);
-      return true;
-  }
-  catch (e) {
-      return e instanceof DOMException && (
-          // everything except Firefox
-          e.code === 22 ||
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+    // everything except Firefox
+      e.code === 22
           // Firefox
-          e.code === 1014 ||
-          e.name === 'QuotaExceededError' ||
+          || e.code === 1014
+          || e.name === 'QuotaExceededError'
           // Firefox
-          e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+          || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
           // acknowledge QuotaExceededError only if there's something already stored
-          (storage && storage.length !== 0);
+          && (storage && storage.length !== 0);
   }
 }
 
@@ -242,5 +240,3 @@ userName.addEventListener('change', () => {
   userData.message = userMessage.value;
   storage.setItem('formUserData', JSON.stringify(userData));
 });
-
-
