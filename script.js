@@ -164,3 +164,14 @@ form.addEventListener('submit', (event) => {
     errorMsg.innerText = 'Please enter the e-mail in lowercase';
   }
 });
+
+// bug  land font-size: 32px;
+// const cancel = document.querySelector('.cancel-icon');
+
+const logo = document.querySelector('.my-logo');
+// const land = document.querySelector('.land');
+
+logo.addEventListener('click', () => {
+  // logo.style.font-size = '320px';
+  logo.style.display = 'none';
+});
