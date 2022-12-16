@@ -17,15 +17,15 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 // Dynamic Pages
 
 const project = [{
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
   description2: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  img1: './img/Snapshoot-Portfolio_desk.png',
-  img2: './img/Snapshoot-Portfolio_desk.png',
+  img1: './img/projects/capstone1.png',
+  img2: './img/projects/capstone1.png',
   technologies: ['Html', 'Css', 'Javascript'],
-  liveDemo: 'https://george827.github.io/My-Portfolio/',
-  sourceCode: 'https://github.com/george827/My-Portfolio',
-  title1: 'Tonic',
-  title2: 'Tonic',
+  liveDemo: 'https://george827.github.io/Capstone-one/',
+  sourceCode: 'https://github.com/george827/Capstone-one',
+  title1: 'Excel Academy',
+  title2: 'Excel Academy',
 },
 {
   description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
@@ -86,7 +86,7 @@ project.forEach((projects) => {
           <li> <img class="counter" src="./img/Counter.png" alt="counter">  </li>
           <li>Back End Dev</li>
           <li> <img class="counter" src="./img/Counter.png" alt="counter"> </li>
-          <li>2015</li>
+          <li>2022</li>
       </ul>
       <p class="doc">${projects.description}</p>
       <ul class="languages">
@@ -165,13 +165,78 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// bug  land font-size: 32px;
-// const cancel = document.querySelector('.cancel-icon');
+// preserve data
+const userName = document.querySelector('#name');
+const userMessage = document.querySelector('#message');
 
-const logo = document.querySelector('.my-logo');
-// const land = document.querySelector('.land');
+const storage = window.localStorage;
 
-logo.addEventListener('click', () => {
-  // logo.style.font-size = '320px';
-  logo.style.display = 'none';
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+    // everything except Firefox
+      e.code === 22
+          // Firefox
+          || e.code === 1014
+          || e.name === 'QuotaExceededError'
+          // Firefox
+          || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+          // acknowledge QuotaExceededError only if there's something already stored
+          && (storage && storage.length !== 0);
+  }
+}
+
+function retrieveData() {
+  if (storageAvailable('localStorage')) {
+    const userDataString = storage.getItem('formUserData');
+    const formUserData = JSON.parse(userDataString);
+    return formUserData;
+  }
+  return false;
+}
+
+function fillForm() {
+  const formUserData = retrieveData();
+  if (formUserData) {
+    if (formUserData.name) {
+      userName.value = formUserData.name;
+    }
+    if (formUserData.email) {
+      email.value = formUserData.email;
+    }
+    if (formUserData.message) {
+      userMessage.value = formUserData.message;
+    }
+  }
+}
+fillForm();
+
+const userData = {};
+
+userMessage.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
+});
+
+email.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
+});
+
+userName.addEventListener('change', () => {
+  userData.name = userName.value;
+  userData.email = email.value;
+  userData.message = userMessage.value;
+  storage.setItem('formUserData', JSON.stringify(userData));
 });
