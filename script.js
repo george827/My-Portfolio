@@ -147,7 +147,7 @@ project.forEach((projects) => {
   });
 });
 
-// validate contanct
+// validate con
 
 const form = document.querySelector('#form_contact');
 
@@ -165,7 +165,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// preserve data
+// preserve dat
 const userName = document.querySelector('#name');
 const userMessage = document.querySelector('#message');
 
