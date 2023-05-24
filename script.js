@@ -16,27 +16,28 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 // Dynamic Pages
 
-const project = [{
+const project = [
+  {
+    description: 'This is an innovative restaurant table reservation application designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant. The app is powered by a Rails API backend.',
+    description2: 'Restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant.',
+    img1: './img/projects/restaurant.png',
+    img2: './img/projects/restaurant-mobile.png',
+    technologies: ['React', 'Css', 'Redux'],
+    liveDemo: 'https://book-reservation-h17l.onrender.com/',
+    sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
+    title1: 'Restaurant Table Reservation',
+    title2: 'Restaurant Table Reservation',
+  },
+  {
   description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
   description2: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   img1: './img/projects/capstone1.png',
-  img2: './img/projects/capstone1.png',
+  img2: './img/projects/Capstone-mobile.png',
   technologies: ['Html', 'Css', 'Javascript'],
   liveDemo: 'https://george827.github.io/Capstone-one/',
   sourceCode: 'https://github.com/george827/Capstone-one',
   title1: 'Excel Academy',
   title2: 'Excel Academy',
-},
-{
-  description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  description2: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  img1: './img/Snapshoot Portfolio4.png',
-  img2: './img/Snapshoot Portfolio4.png',
-  technologies: ['Html', 'Css', 'Javascript'],
-  liveDemo: 'https://george827.github.io/My-Portfolio/',
-  sourceCode: 'https://github.com/george827/My-Portfolio',
-  title1: 'Multi-Post Stories',
-  title2: 'Multi-Post Stories',
 },
 {
   description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
