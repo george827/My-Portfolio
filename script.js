@@ -20,7 +20,7 @@ const project = [
   {
     description: 'This is an innovative restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant. The app is powered by a Rails API backend.',
     description2: 'Restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant.',
-    img: './img/projects/restaurant.png',
+    img1: './img/projects/restaurant.png',
     technologies: ['React', 'Css', 'Redux'],
     liveDemo: 'https://book-reservation-h17l.onrender.com/',
     sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
@@ -30,7 +30,7 @@ const project = [
   {
     description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
     description2: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
-    img: './img/projects/Cap.png',
+    img1: './img/projects/Cap.png',
     technologies: ['Html', 'Css', 'Javascript'],
     liveDemo: 'https://george827.github.io/Capstone-one/',
     sourceCode: 'https://github.com/george827/Capstone-one',
@@ -40,7 +40,7 @@ const project = [
   {
     description: 'Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions.',
     description2: 'Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions',
-    img: './img/projects/budgetApp.png',
+    img1: './img/projects/budgetApp.png',
     technologies: ['Ruby', 'Rails', 'Javascript'],
     liveDemo: 'https://budget-n0m8.onrender.com/',
     sourceCode: 'https://github.com/george827/budget-app',
@@ -50,7 +50,7 @@ const project = [
   {
     description: 'Space X project is a react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section',
     description2: 'Space X project is a react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section',
-    img: './img/projects/SpaceTravellers.png',
+    img1: './img/projects/SpaceTravellers.png',
     technologies: ['React', 'Redux', 'Css'],
     liveDemo: 'https://space-travelers-6imy.onrender.com/',
     sourceCode: 'https://github.com/george827/space-travelers-hub-react-redux',
@@ -68,7 +68,7 @@ project.forEach((projects) => {
   const img = document.createElement('img');
   const elements = document.createElement('div');
   const button = document.createElement('button');
-  img.src = `${projects.img}`;
+  img.src = `${projects.img1}`;
   article.classList.add('card1');
   button.classList.add('btn-main');
   elements.classList.add('elements1');
@@ -115,7 +115,7 @@ project.forEach((projects) => {
                   <li> <img class="counter" src="./img/Counter.png"></li>
                   <li> 2015</li>
               </ul>
-              <img class="carImg pop-img" src="${projects.img}">
+              <img class="carImg pop-img" src="${projects.img1}">
               <div class="popup-content">
                   <div class="left-section">
                       <p class="doc">${projects.description2}</p>
