@@ -1,6 +1,7 @@
 const humburger = document.querySelector('.my-menu');
 const navMenu = document.querySelector('.my-menu-nav');
 const nav = document.querySelector('.nav');
+const about = document.querySelector('.about');
 
 humburger.addEventListener('click', () => {
   humburger.classList.toggle('active');
@@ -18,7 +19,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const project = [
   {
-    description: 'This is an innovative restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant. The app is powered by a Rails API backend.',
+    description: 'Restaurant table reservation app is designed to elevate your dining experience. Connecting diners with their desired culinary destination, this app empowers users to browse and reserve available tables at their favorite restaurant. Powered by a Rails API backend.',
     description2: 'Restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant.',
     img1: './img/projects/restaurant.png',
     img2: './img/projects/restaurant.png',
@@ -81,7 +82,7 @@ project.forEach((projects) => {
 
   elements.innerHTML += `
   <div class="sideSection">
-      <h2 class="head-one">${projects.title1}</h2>
+      <h2 class="head-one mb-4">${projects.title1}</h2>
       <ul class="highlights">
           <li class="canop">CANOPY</li>
           <li> <img class="counter" src="./img/Counter.png" alt="counter">  </li>
@@ -106,6 +107,7 @@ project.forEach((projects) => {
   button.addEventListener('click', () => {
     popup.style.display = 'flex';
     section.style.filter = 'blur(5px)';
+    about.style.filter = 'blur(5px)';
     document.body.style.overflow = 'hidden';
     popup.innerHTML = `
   <div class="popup-header">
@@ -143,6 +145,7 @@ project.forEach((projects) => {
     cancel.addEventListener('click', () => {
       popup.style.display = 'none';
       section.style.filter = 'none';
+      about.style.filter = 'none';
       document.body.style.overflow = 'initial';
     });
   });

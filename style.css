@@ -3,13 +3,15 @@
 body {
   background: #e5e5e5;
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .land {
   display: grid;
   background: #fff;
-  height: 750px;
   width: 100%;
+  height: 100vh;
   border-bottom-left-radius: 80px;
 }
 
@@ -115,10 +117,9 @@ nav {
 .headline {
   background-image: url("img/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
-  width: 97%;
-  height: 587.15px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,9 +127,8 @@ nav {
 
 .head1 {
   margin-top: 80px;
-  margin-left: 5%;
-  width: 250px;
-  height: 150px;
+  margin-left: 7%;
+  width: 20rem;
   z-index: 1;
   font-style: normal;
   font-weight: 700;
@@ -305,7 +305,8 @@ ul li {
 }
 
 .popup-header {
-  height: 10vh;
+  height: 15vh;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -428,34 +429,34 @@ ul {
   background-color: #fff;
   border: solid 2px lightgrey;
   border-radius: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
   padding: 4% 2% 5% 2%;
   position: fixed;
   top: 20px;
-  overflow: auto;
+  width: 95%;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 85vh;
   z-index: 5;
 }
 
 .popup-window::-webkit-scrollbar {
-  width: 1em;
+  width: 0.3em;
 }
 
 .popup-window::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f1f1f1;
 }
 
 .popup-window::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: #6070ff;
+  border-radius: 4px;
 }
 
 .about {
   background: #fff;
   width: 100%;
   height: 1263px;
-  margin-top: 50px;
+  margin-top: 2rem;
   border-top-right-radius: 150px;
 }
 
@@ -535,8 +536,14 @@ ul {
   margin-top: 10px;
 }
 
-#about_p {
-  margin-left: 3%;
+.about_p {
+  font-style: normal;
+  font-weight: 400;
+  color: #344563;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .line {
@@ -559,10 +566,8 @@ ul {
 }
 
 .headline-2 {
-  width: 462px;
   height: 587.15px;
   margin-top: 30px;
-  margin-left: 10px;
 }
 
 .head-2 {
@@ -577,6 +582,16 @@ ul {
   display: flex;
   align-items: center;
   color: #172b4d;
+}
+
+.head-2 > h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
 }
 
 .icons-2 {
@@ -740,6 +755,14 @@ ul {
     border-radius: 20px;
     margin: 0.5rem;
   }
+
+  .primary-div {
+    width: 80%;
+  }
+
+  .about {
+    width: 100%;
+  }
 }
 
 /* -----------desktop version ----------- */
@@ -767,7 +790,11 @@ ul {
     width: 100%;
     border-bottom-left-radius: 170px;
     margin-right: 20px;
-    height: 916px;
+    height: 45rem;
+  }
+
+  .head1 {
+    margin-top: 8rem;
   }
 
   .my-menu {
@@ -1040,8 +1067,10 @@ ul {
     margin-right: 50%;
   }
 
-  #about_p {
+  .about_p {
     width: 80%;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .space {
@@ -1057,8 +1086,9 @@ ul {
   }
 
   .sect1_about {
-    width: auto;
+    width: 40%;
     margin-top: 50px;
+    margin-left: auto;
   }
 
   .main-1 {
