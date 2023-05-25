@@ -18,21 +18,19 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const project = [
   {
-    description: 'This is an innovative restaurant table reservation application designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant. The app is powered by a Rails API backend.',
+    description: 'This is an innovative restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant. The app is powered by a Rails API backend.',
     description2: 'Restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant.',
-    img1: './img/projects/restaurant.png',
-    img2: './img/projects/restaurant-mobile.png',
+    img: './img/projects/restaurant.png',
     technologies: ['React', 'Css', 'Redux'],
     liveDemo: 'https://book-reservation-h17l.onrender.com/',
     sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
-    title1: 'Restaurant Table Reservation',
-    title2: 'Restaurant Table Reservation',
+    title1: 'Restaurant Table',
+    title2: 'Restaurant Table',
   },
   {
   description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
-  description2: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  img1: './img/projects/capstone1.png',
-  img2: './img/projects/Capstone-mobile.png',
+  description2: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
+  img: './img/projects/Cap.png',
   technologies: ['Html', 'Css', 'Javascript'],
   liveDemo: 'https://george827.github.io/Capstone-one/',
   sourceCode: 'https://github.com/george827/Capstone-one',
@@ -40,26 +38,24 @@ const project = [
   title2: 'Excel Academy',
 },
 {
-  description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-  description2: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-  img1: './img/Snapshoot-Portfolio-DESK3.png',
-  img2: './img/Snapshoot-Portfolio-DESK3.png',
-  technologies: ['Html', 'Css', 'Javascript'],
-  liveDemo: 'https://george827.github.io/My-Portfolio/',
-  sourceCode: 'https://github.com/george827/My-Portfolio',
-  title1: 'Facebook 360',
-  title2: 'Facebook 360',
+  description: "Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions.",
+  description2: "Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions",
+  img: './img/projects/budgetApp.png',
+  technologies: ['Ruby', 'Rails', 'Javascript'],
+  liveDemo: 'https://budget-n0m8.onrender.com/',
+  sourceCode: 'https://github.com/george827/budget-app',
+  title1: 'Budget App',
+  title2: 'Bugget App',
 },
 {
-  description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  description2: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  img1: './img/Snapshoot-Portfolio-DESK4.png',
-  img2: './img/Snapshoot-Portfolio-DESK4.png',
-  technologies: ['Html', 'Css', 'Javascript'],
-  liveDemo: 'https://george827.github.io/My-Portfolio/',
-  sourceCode: 'https://github.com/george827/My-Portfolio',
-  title1: 'Uber Navigation',
-  title2: 'Uber Navigation',
+  description: 'Space X project is a react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section',
+  description2: 'Space X project is a react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section',
+  img: './img/projects/SpaceTravellers.png',
+  technologies: ['React', 'Redux', 'Css'],
+  liveDemo: 'https://space-travelers-6imy.onrender.com/',
+  sourceCode: 'https://github.com/george827/space-travelers-hub-react-redux',
+  title1: 'Space Travelers',
+  title2: 'Space Travelers',
 },
 ];
 
@@ -72,7 +68,7 @@ project.forEach((projects) => {
   const img = document.createElement('img');
   const elements = document.createElement('div');
   const button = document.createElement('button');
-  img.src = `${projects.img1}`;
+  img.src = `${projects.img}`;
   article.classList.add('card1');
   button.classList.add('btn-main');
   elements.classList.add('elements1');
@@ -119,7 +115,7 @@ project.forEach((projects) => {
                   <li> <img class="counter" src="./img/Counter.png"></li>
                   <li> 2015</li>
               </ul>
-              <img src="${projects.img2}">
+              <img class="carImg pop-img" src="${projects.img}">
               <div class="popup-content">
                   <div class="left-section">
                       <p class="doc">${projects.description2}</p>
