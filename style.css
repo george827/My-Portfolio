@@ -253,8 +253,8 @@ a {
 }
 
 .doc {
-  width: 295px;
-  height: 76px;
+  width: 90%;
+  height: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -386,6 +386,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   margin-left: 3%;
+  margin-bottom: auto;
 }
 
 .btn-main:enabled {
@@ -732,6 +733,17 @@ ul {
   display: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .pop-img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 20px;
+    margin: 0.5rem;
+  }
+}
+
+/* -----------desktop version ----------- */
+
 @media only screen and (min-width: 768px) {
   body {
     width: 100%;
@@ -877,7 +889,7 @@ ul {
     flex: 1;
   }
 
-  div.elements1 {
+  .elements1 {
     flex: 1;
     padding-left: 5%;
   }
@@ -1041,7 +1053,7 @@ ul {
   .doc {
     width: 80%;
     height: auto;
-    margin-bottom: 10%;
+    margin-bottom: 0.5rem;
   }
 
   .sect1_about {
