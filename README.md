@@ -5,7 +5,7 @@
   <img src="./img/projectindex.png" alt="project" width="140"  height="auto" />
   <br/>
 
-  <h3><b>George Kinyanjui</b></h3>
+  <h3><b>George Kinyanjui </b></h3>
 
 </div>
 
