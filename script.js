@@ -31,8 +31,8 @@ const project = [
   {
     description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
     description2: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
-    img1: './img/projects/Cap.png',
-    img2: './img/projects/Cap.png',
+    img1: 'img/projects/Cap.png',
+    img2: 'img/projects/Cap.png',
     technologies: ['Html', 'Css', 'Javascript'],
     liveDemo: 'https://george827.github.io/Capstone-one/',
     sourceCode: 'https://github.com/george827/Capstone-one',
@@ -42,8 +42,8 @@ const project = [
   {
     description: 'Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions.',
     description2: 'Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions',
-    img1: './img/projects/budgetApp.png',
-    img2: './img/projects/budgetApp.png',
+    img1: 'img/projects/budgetApp.png',
+    img2: 'img/projects/budgetApp.png',
     technologies: ['Ruby', 'Rails', 'Javascript'],
     liveDemo: 'https://budget-n0m8.onrender.com/',
     sourceCode: 'https://github.com/george827/budget-app',
