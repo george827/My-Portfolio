@@ -19,10 +19,10 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const project = [
   {
-    description: 'Restaurant table reservation app is designed to elevate your dining experience. Connecting diners with their desired culinary destination, this app empowers users to browse and reserve available tables at their favorite restaurant. Powered by a Rails API backend.',
+    description: 'This is an innovative restaurant table reservation application designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant. The app is powered by a Rails API backend.',
     description2: 'Restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant.',
-    img1: './img/projects/restaurant.png',
-    img2: './img/projects/restaurant.png',
+    img1: ['./img/projects/restaurant/restaurant1.png', './img/projects/restaurant/restaurant2.png', './img/projects/restaurant/restaurant3.png'],
+    img2: './img/projects/restaurant/restaurant1.png',
     technologies: ['React', 'Css', 'Redux'],
     liveDemo: 'https://book-reservation-h17l.onrender.com/',
     sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
@@ -32,8 +32,8 @@ const project = [
   {
     description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
     description2: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
-    img1: 'img/projects/Cap.png',
-    img2: 'img/projects/Cap.png',
+    img1: ['img/projects/capstone/Cap1.png', 'img/projects/capstone/Cap2.png', 'img/projects/capstone/Cap3.png'],
+    img2: 'img/projects/capstone/Cap1.png',
     technologies: ['Html', 'Css', 'Javascript'],
     liveDemo: 'https://george827.github.io/Capstone-one/',
     sourceCode: 'https://github.com/george827/Capstone-one',
@@ -43,8 +43,8 @@ const project = [
   {
     description: 'Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions.',
     description2: 'Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions',
-    img1: 'img/projects/budgetApp.png',
-    img2: 'img/projects/budgetApp.png',
+    img1: ['img/projects/budget/budgetApp1.png', 'img/projects/budget/budgetApp2.png', 'img/projects/budget/budgetApp3.png'],
+    img2: 'img/projects/budget/budgetApp1.png',
     technologies: ['Ruby', 'Rails', 'Javascript'],
     liveDemo: 'https://budget-n0m8.onrender.com/',
     sourceCode: 'https://github.com/george827/budget-app',
@@ -54,8 +54,8 @@ const project = [
   {
     description: 'Space X project is a react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section',
     description2: 'Space X project is a react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section',
-    img1: './img/projects/SpaceTravellers.png',
-    img2: './img/projects/SpaceTravellers.png',
+    img1: ['./img/projects/spaceTravellers/SpaceTravellers1.png', './img/projects/spaceTravellers/SpaceTravellers2.png', './img/projects/spaceTravellers/SpaceTravellers3.png'],
+    img2: './img/projects/spaceTravellers/SpaceTravellers1.png',
     technologies: ['React', 'Redux', 'Css'],
     liveDemo: 'https://space-travelers-6imy.onrender.com/',
     sourceCode: 'https://github.com/george827/space-travelers-hub-react-redux',
@@ -70,19 +70,35 @@ const popup = document.querySelector('.popup-window');
 project.forEach((projects) => {
   const article = document.createElement('article');
   const divImg = document.createElement('div');
-  const img = document.createElement('img');
   const elements = document.createElement('div');
   const button = document.createElement('button');
-  img.src = `${projects.img1}`;
+
+  divImg.innerHTML = `
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="carImg" src="${projects.img1[0]}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img class="carImg" src="${projects.img1[1]}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img class="carImg" src="${projects.img1[2]}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+  `;
+
+  // img.src = `${projects.img1}`;
   article.classList.add('card1');
   button.classList.add('btn-main');
   elements.classList.add('elements1');
   button.innerText = 'See Project';
-  img.classList.add('carImg');
+  // img.classList.add('carImg');
 
   elements.innerHTML += `
   <div class="sideSection">
-      <h2 class="head-one mb-4">${projects.title1}</h2>
+      <h2 class="head-one">${projects.title1}</h2>
       <ul class="highlights">
           <li class="canop">CANOPY</li>
           <li> <img class="counter" src="./img/Counter.png" alt="counter">  </li>
@@ -100,7 +116,7 @@ project.forEach((projects) => {
   
   `;
   elements.append(button);
-  divImg.append(img);
+  divImg.classList.add('img-container');
   article.append(divImg, elements);
   section.append(article);
 
