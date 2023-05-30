@@ -106,10 +106,10 @@ nav {
   height: 100vh;
   background: #6070ff;
   position: absolute;
-  left: 5px;
+  left: 0;
   right: 0;
   top: 0;
-  opacity: 0.91;
+  opacity: 0.9;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -142,6 +142,48 @@ nav {
   display: flex;
   align-items: center;
   color: #172b4d;
+}
+
+.head12 {
+  margin-left: 7%;
+  z-index: 1;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.wrapper .static-text {
+  display: inline-flex;
+}
+
+.dynamic-text span {
+  position: relative;
+}
+
+.dynamic-text span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: #fff;
+  border-left: #020303 solid 2px;
+  overflow: hidden;
+  animation: typing 6s steps(40, end) infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 .primary {
@@ -181,7 +223,7 @@ a {
 }
 
 .icons {
-  width: 170.17px;
+  width: 20rem;
   height: 20px;
   margin-top: 20px;
   margin-left: 5%;
@@ -457,7 +499,9 @@ ul {
 .about {
   background: #fff;
   width: 100%;
-  height: 1263px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   border-top-right-radius: 150px;
 }
 
@@ -471,8 +515,8 @@ ul {
 }
 
 .lang-list {
-  width: 327px;
-  height: 248.15px;
+  width: 80%;
+  height: fit-content;
 }
 
 .a-items {
@@ -503,7 +547,6 @@ ul {
 
 #skills {
   width: 327px;
-  height: 464.15px;
   margin-left: 10px;
 }
 
@@ -516,11 +559,12 @@ ul {
 #skill {
   display: grid;
   gap: 15px;
+  height: auto;
 }
 
 .frame-8 {
   width: 327px;
-  height: 72px;
+  height: fit-content;
 }
 
 .frameworks {
@@ -567,8 +611,8 @@ ul {
 }
 
 .headline-2 {
-  height: 587.15px;
   margin-top: 30px;
+  height: fit-content;
 }
 
 .head-2 {
@@ -616,12 +660,15 @@ ul {
   flex-direction: column;
 }
 
-.cancel-icon {
-  padding-top: 5%;
+.mycancel-icon {
+  font-size: 20px;
+  color: #6070ff;
 }
 
-.cancel-icon:hover {
+.mycancel-icon:hover {
   cursor: pointer;
+  transform: rotate(90deg);
+  transition: transform 0.5s ease;
 }
 
 .left-section {
@@ -754,6 +801,53 @@ ul {
   display: none;
 }
 
+/* ----skils section */
+
+.right {
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease;
+}
+
+.show-more {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease;
+}
+
+.arrow-btn:hover {
+  cursor: pointer;
+}
+
+.hide-display {
+  display: none;
+}
+
+/* ---deletables---- */
+.socials-2 > li > a {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  overflow: hidden;
+}
+
+.socials-2 > li > a > span {
+  margin-left: 0.5rem;
+}
+
+.socials-2 > li > a:hover {
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px, rgba(0, 0, 0, 0.07) 0 2px 4px, rgba(0, 0, 0, 0.07) 0 4px 8px, rgba(0, 0, 0, 0.07) 0 8px 16px, rgba(0, 0, 0, 0.07) 0 16px 32px, rgba(0, 0, 0, 0.07) 0 32px 64px;
+  color: #06080c;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 0.3rem;
+  height: 36px;
+  transition: all 0.5s ease-in-out;
+}
+
+.added {
+  margin: 0;
+}
+
 @media only screen and (max-width: 768px) {
   .pop-img {
     width: 100%;
@@ -769,6 +863,11 @@ ul {
   .about {
     width: 100%;
   }
+
+  .my-space {
+    height: 100px;
+    width: 100%;
+  }
 }
 
 /* -----------desktop version ----------- */
@@ -778,6 +877,12 @@ ul {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+  }
+
+  .my-space,
+  .my-space-l {
+    height: 100px;
+    width: 100%;
   }
 
   .my-menu-nav {
@@ -963,7 +1068,6 @@ ul {
 
   .about {
     width: 100vw;
-    height: 924px;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -988,20 +1092,25 @@ ul {
     display: flex;
     justify-content: start;
     width: auto;
+    flex-wrap: wrap;
   }
 
   .b-items {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 120px;
+    width: 7rem;
   }
 
   #frame-img {
     width: 48px;
     height: 48px;
-    margin-left: 5px;
+    margin-top: 0.5rem;
   }
 
   #icon-text {

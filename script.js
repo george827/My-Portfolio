@@ -2,6 +2,10 @@ const humburger = document.querySelector('.my-menu');
 const navMenu = document.querySelector('.my-menu-nav');
 const nav = document.querySelector('.nav');
 const about = document.querySelector('.about');
+const langRotate = document.querySelector('.lang-rotate');
+const langList = document.querySelector('.lang-list');
+const frameworks = document.querySelector('.arrow-frame');
+const frameworkList = document.querySelector('.my-frame');
 
 humburger.addEventListener('click', () => {
   humburger.classList.toggle('active');
@@ -89,22 +93,20 @@ project.forEach((projects) => {
 </div>
   `;
 
-  // img.src = `${projects.img1}`;
   article.classList.add('card1');
   button.classList.add('btn-main');
   elements.classList.add('elements1');
   button.innerText = 'See Project';
-  // img.classList.add('carImg');
 
   elements.innerHTML += `
   <div class="sideSection">
       <h2 class="head-one">${projects.title1}</h2>
       <ul class="highlights">
-          <li class="canop">CANOPY</li>
+          <li class="canop">Microverse</li>
           <li> <img class="counter" src="./img/Counter.png" alt="counter">  </li>
-          <li>Back End Dev</li>
+          <li>Web Development</li>
           <li> <img class="counter" src="./img/Counter.png" alt="counter"> </li>
-          <li>2022</li>
+          <li>2023</li>
       </ul>
       <p class="doc">${projects.description}</p>
       <ul class="languages">
@@ -128,14 +130,14 @@ project.forEach((projects) => {
     popup.innerHTML = `
   <div class="popup-header">
                   <h2 class="head-one h-pop">${projects.title1}</h2>
-                  <div class="cancel-icon"><img src="./img/cancel-icon.png"></div>
+                  <div class="cancel-icon"><p><i class="fa-solid fa-x mycancel-icon"></i> <p></div>
               </div>
               <ul class="highlights">
-                  <li class="canop">CANOPY</li>
+                  <li class="canop">Microverse</li>
                   <li> <img class="counter" src="./img/Counter.png"></li>
-                  <li> Back End Dev</li>
+                  <li> Web Development</li>
                   <li> <img class="counter" src="./img/Counter.png"></li>
-                  <li> 2015</li>
+                  <li> 2023</li>
               </ul>
               <img class="carImg pop-img" src="${projects.img2}">
               <div class="popup-content">
@@ -260,3 +262,18 @@ userName.addEventListener('change', () => {
   userData.message = userMessage.value;
   storage.setItem('formUserData', JSON.stringify(userData));
 });
+
+
+// skill section 
+langRotate.addEventListener('click', () => {
+  langRotate.classList.toggle('right');
+  langList.classList.toggle('hide-display');
+}
+);
+
+
+frameworks.addEventListener('click', () => {
+  frameworks.classList.toggle('show-more');
+  frameworkList.classList.toggle('hide-display');
+}
+);
