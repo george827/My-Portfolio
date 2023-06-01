@@ -973,7 +973,7 @@ ul {
     justify-content: center;
     background-image: url("img/Header-bg.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     z-index: 1;
   }
 
