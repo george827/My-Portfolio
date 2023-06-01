@@ -6,6 +6,8 @@ const langRotate = document.querySelector('.lang-rotate');
 const langList = document.querySelector('.lang-list');
 const frameworks = document.querySelector('.arrow-frame');
 const frameworkList = document.querySelector('.my-frame');
+const skillList = document.querySelector('.my-skills');
+const skills = document.querySelector('.arrow-skill')
 
 humburger.addEventListener('click', () => {
   humburger.classList.toggle('active');
@@ -275,5 +277,12 @@ langRotate.addEventListener('click', () => {
 frameworks.addEventListener('click', () => {
   frameworks.classList.toggle('show-more');
   frameworkList.classList.toggle('hide-display');
+}
+);
+
+skills.addEventListener('click', () => {
+  skills.classList.toggle('show-more');
+  skillList.classList.toggle('hide-display');
+  my-skills
 }
 );
