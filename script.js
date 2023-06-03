@@ -283,6 +283,5 @@ frameworks.addEventListener('click', () => {
 skills.addEventListener('click', () => {
   skills.classList.toggle('show-more');
   skillList.classList.toggle('hide-display');
-  my-skills
 }
 );

@@ -815,12 +815,16 @@ ul {
 
 .right {
   transform: rotate(-90deg);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
 }
 
 .show-more {
   transform: rotate(90deg);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
+}
+
+.arrow-btn {
+  transition: all 0.5s ease-out;
 }
 
 .arrow-btn:hover {
