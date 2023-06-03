@@ -30,7 +30,7 @@ const project = [
     img1: ['./img/projects/restaurant/restaurant1.png', './img/projects/restaurant/restaurant2.png', './img/projects/restaurant/restaurant3.png'],
     img2: './img/projects/restaurant/restaurant1.png',
     technologies: ['React', 'Css', 'Redux'],
-    liveDemo: 'https://book-reservation-h17l.onrender.com/',
+    liveDemo: 'https://restaurant-reservation-qx5z.onrender.com/',
     sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
     title1: 'Restaurant Table',
     title2: 'Restaurant Table',
