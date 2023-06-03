@@ -927,6 +927,7 @@ ul {
     left: 0;
     width: 100%;
     padding: 1rem;
+    border-bottom: 2px solid rgb(229, 229, 229);
   }
 
   .my-logo {

@@ -7,7 +7,7 @@ const langList = document.querySelector('.lang-list');
 const frameworks = document.querySelector('.arrow-frame');
 const frameworkList = document.querySelector('.my-frame');
 const skillList = document.querySelector('.my-skills');
-const skills = document.querySelector('.arrow-skill')
+const skills = document.querySelector('.arrow-skill');
 
 humburger.addEventListener('click', () => {
   humburger.classList.toggle('active');
@@ -265,23 +265,18 @@ userName.addEventListener('change', () => {
   storage.setItem('formUserData', JSON.stringify(userData));
 });
 
-
-// skill section 
+// skill section
 langRotate.addEventListener('click', () => {
   langRotate.classList.toggle('right');
   langList.classList.toggle('hide-display');
-}
-);
-
+});
 
 frameworks.addEventListener('click', () => {
   frameworks.classList.toggle('show-more');
   frameworkList.classList.toggle('hide-display');
-}
-);
+});
 
 skills.addEventListener('click', () => {
   skills.classList.toggle('show-more');
   skillList.classList.toggle('hide-display');
-}
-);
+});
