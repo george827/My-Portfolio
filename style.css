@@ -458,6 +458,26 @@ ul {
   color: #5e6c84;
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #fff; /* Initial shadow color and size */
+  }
+
+  50% {
+    box-shadow: 0 0 20px #0f0; /* Intermediate shadow color and size */
+  }
+
+  100% {
+    box-shadow: 0 0 5px #fff; /* Final shadow color and size */
+  }
+}
+
+.submit-btn {
+  border: 2px solid #c1c7d0;
+  cursor: pointer;
+  animation: glow 3s infinite;
+}
+
 .btn-main:active {
   background: #2230d2;
   color: white;
