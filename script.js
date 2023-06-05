@@ -25,8 +25,8 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const project = [
   {
-    description: 'This is an innovative restaurant table reservation application designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant. The app is powered by a Rails API backend.',
-    description2: 'Restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant.',
+    description: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
+    description2: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
     img1: ['./img/projects/restaurant/restaurants1.png', './img/projects/restaurant/restaurants2.png', './img/projects/restaurant/restaurants3.png'],
     img2: './img/projects/restaurant/restaurants1.png',
     technologies: ['React', 'Css', 'Redux'],
@@ -58,8 +58,8 @@ const project = [
     title2: 'Bugget App',
   },
   {
-    description: 'Space X project is a react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section',
-    description2: 'Space X project is a react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section',
+    description: 'Space X project is a react-redux project that uses space x API to display a list of rockets and missions. Rockets can be reserved and mission can be joined. Users can access the personal list in the profile section.',
+    description2: 'Space X project is a react-redux project that uses space x API to display a list of rockets and missions. Rockets can be reserved and mission can be joined. Users can access the personal list in the profile section.',
     img1: ['./img/projects/spaceTravellers/SpaceTravellers1.png', './img/projects/spaceTravellers/SpaceTravellers2.png', './img/projects/spaceTravellers/SpaceTravellers3.png'],
     img2: './img/projects/spaceTravellers/SpaceTravellers1.png',
     technologies: ['React', 'Redux', 'Css'],
