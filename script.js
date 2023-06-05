@@ -27,8 +27,8 @@ const project = [
   {
     description: 'This is an innovative restaurant table reservation application designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant. The app is powered by a Rails API backend.',
     description2: 'Restaurant table reservation app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurant.',
-    img1: ['./img/projects/restaurant/restaurant1.png', './img/projects/restaurant/restaurant2.png', './img/projects/restaurant/restaurant3.png'],
-    img2: './img/projects/restaurant/restaurant1.png',
+    img1: ['./img/projects/restaurant/restaurants1.png', './img/projects/restaurant/restaurants2.png', './img/projects/restaurant/restaurants3.png'],
+    img2: './img/projects/restaurant/restaurants1.png',
     technologies: ['React', 'Css', 'Redux'],
     liveDemo: 'https://restaurant-reservation-qx5z.onrender.com/',
     sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
