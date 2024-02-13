@@ -36,6 +36,17 @@ const project = [
     title2: 'Restaurant Table',
   },
   {
+    description: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
+    description2: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
+    img1: ['./img/projects/restaurant/restaurants1.png', './img/projects/restaurant/restaurants2.png', './img/projects/restaurant/restaurants3.png'],
+    img2: './img/projects/restaurant/restaurants1.png',
+    technologies: ['React', 'Css', 'Redux'],
+    liveDemo: 'https://restaurant-reservation-qx5z.onrender.com/',
+    sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
+    title1: 'MFlix Movie',
+    title2: 'MFlix Movie',
+  },
+  {
     description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
     description2: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
     img1: ['img/projects/capstone/Cap1.png', 'img/projects/capstone/Cap2.png', 'img/projects/capstone/Cap3.png'],
