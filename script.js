@@ -25,17 +25,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const project = [
   {
-    description: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
-    description2: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
-    img1: ['./img/projects/restaurant/restaurants1.png', './img/projects/restaurant/restaurants2.png', './img/projects/restaurant/restaurants3.png'],
-    img2: './img/projects/restaurant/restaurants1.png',
-    technologies: ['React', 'Css', 'Redux'],
-    liveDemo: 'https://restaurant-reservation-qx5z.onrender.com/',
-    sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
-    title1: 'Restaurant Table',
-    title2: 'Restaurant Table',
-  },
-  {
     description: 'MFlix is a movie app that allows users to browse and search for movies. Users can also view movie details and watch trailers. The app is powered by the MovieDB API.',
     description2: 'MFlix is a movie app that allows users to browse and search for movies. Users can also view movie details and watch trailers. The app is powered by the MovieDB API.',
     img1: ['./img/projects/mflix/one.png', './img/projects/mflix/two.png', './img/projects/mflix/three.png'],
@@ -45,6 +34,17 @@ const project = [
     sourceCode: 'https://github.com/george827/Mflix-movie_app.git',
     title1: 'MFlix Movie',
     title2: 'MFlix Movie',
+  },
+  {
+    description: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
+    description2: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
+    img1: ['./img/projects/restaurant/restaurants1.png', './img/projects/restaurant/restaurants2.png', './img/projects/restaurant/restaurants3.png'],
+    img2: './img/projects/restaurant/restaurants1.png',
+    technologies: ['React', 'Css', 'Redux'],
+    liveDemo: 'https://restaurant-reservation-qx5z.onrender.com/',
+    sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
+    title1: 'Restaurant Table',
+    title2: 'Restaurant Table',
   },
   {
     description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
