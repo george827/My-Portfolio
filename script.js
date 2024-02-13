@@ -1,94 +1,126 @@
-const humburger = document.querySelector('.my-menu');
-const navMenu = document.querySelector('.my-menu-nav');
-const nav = document.querySelector('.nav');
-const about = document.querySelector('.about');
-const langRotate = document.querySelector('.lang-rotate');
-const langList = document.querySelector('.lang-list');
-const frameworks = document.querySelector('.arrow-frame');
-const frameworkList = document.querySelector('.my-frame');
-const skillList = document.querySelector('.my-skills');
-const skills = document.querySelector('.arrow-skill');
+const humburger = document.querySelector(".my-menu");
+const navMenu = document.querySelector(".my-menu-nav");
+const nav = document.querySelector(".nav");
+const about = document.querySelector(".about");
+const langRotate = document.querySelector(".lang-rotate");
+const langList = document.querySelector(".lang-list");
+const frameworks = document.querySelector(".arrow-frame");
+const frameworkList = document.querySelector(".my-frame");
+const skillList = document.querySelector(".my-skills");
+const skills = document.querySelector(".arrow-skill");
 
-humburger.addEventListener('click', () => {
-  humburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-  nav.classList.toggle('active');
+humburger.addEventListener("click", () => {
+  humburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  nav.classList.toggle("active");
 });
 
-document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-  humburger.classList.remove('active');
-  navMenu.classList.remove('active');
-  nav.classList.remove('active');
-}));
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    humburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    nav.classList.remove("active");
+  })
+);
 
 // Dynamic Pages
 
 const project = [
   {
-    description: 'MFlix is a movie app that allows users to browse and search for movies. Users can also view movie details and watch trailers. The app is powered by the MovieDB API.',
-    description2: 'MFlix is a movie app that allows users to browse and search for movies. Users can also view movie details and watch trailers. The app is powered by the MovieDB API.',
-    img1: ['./img/projects/mflix/one.png', './img/projects/mflix/two.png', './img/projects/mflix/three.png'],
-    img2: './img/projects/mflix/one.png',
-    technologies: ['React', 'Css', 'Bootstrap'],
-    liveDemo: 'https://myflix-movie-app.vercel.app/',
-    sourceCode: 'https://github.com/george827/Mflix-movie_app.git',
-    title1: 'MFlix Movie',
-    title2: 'MFlix Movie',
+    description:
+      "MFlix is a movie app that allows users to browse and search for movies. Users can also view movie details and watch trailers. The app is powered by the MovieDB API.",
+    description2:
+      "MFlix is a movie app that allows users to browse and search for movies. Users can also view movie details and watch trailers. The app is powered by the MovieDB API.",
+    img1: [
+      "./img/projects/mflix/one.png",
+      "./img/projects/mflix/two.png",
+      "./img/projects/mflix/three.png",
+    ],
+    img2: "./img/projects/mflix/one.png",
+    technologies: ["React", "Css", "Bootstrap"],
+    liveDemo: "https://myflix-movie-app.vercel.app/",
+    sourceCode: "https://github.com/george827/Mflix-movie_app.git",
+    title1: "MFlix Movie",
+    title2: "MFlix Movie",
   },
   {
-    description: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
-    description2: 'Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.',
-    img1: ['./img/projects/restaurant/restaurants1.png', './img/projects/restaurant/restaurants2.png', './img/projects/restaurant/restaurants3.png'],
-    img2: './img/projects/restaurant/restaurants1.png',
-    technologies: ['React', 'Css', 'Redux'],
-    liveDemo: 'https://restaurant-reservation-qx5z.onrender.com/',
-    sourceCode: 'https://github.com/george827/Book-reservation-Front_End.git',
-    title1: 'Restaurant Table',
-    title2: 'Restaurant Table',
+    description:
+      "Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.",
+    description2:
+      "Restaurant reservation is an innovative Full-stack app designed to elevate your dining experience. Connecting diners with their desired culinary destination, this user-friendly app empowers users to browse and reserve available tables at their favorite restaurants. The app is powered by a Rails API backend.",
+    img1: [
+      "./img/projects/restaurant/restaurants1.png",
+      "./img/projects/restaurant/restaurants2.png",
+      "./img/projects/restaurant/restaurants3.png",
+    ],
+    img2: "./img/projects/restaurant/restaurants1.png",
+    technologies: ["React", "Css", "Redux"],
+    liveDemo: "https://restaurant-reservation-qx5z.onrender.com/",
+    sourceCode: "https://github.com/george827/Book-reservation-Front_End.git",
+    title1: "Restaurant Table",
+    title2: "Restaurant Table",
   },
   {
-    description: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
-    description2: 'An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.',
-    img1: ['img/projects/capstone/Cap1.png', 'img/projects/capstone/Cap2.png', 'img/projects/capstone/Cap3.png'],
-    img2: 'img/projects/capstone/Cap1.png',
-    technologies: ['Html', 'Css', 'Javascript'],
-    liveDemo: 'https://george827.github.io/Capstone-one/',
-    sourceCode: 'https://github.com/george827/Capstone-one',
-    title1: 'Excel Academy',
-    title2: 'Excel Academy',
+    description:
+      "Space X project is a react-redux project that uses space x API to display a list of rockets and missions. Rockets can be reserved and mission can be joined. Users can access the personal list in the profile section.",
+    description2:
+      "Space X project is a react-redux project that uses space x API to display a list of rockets and missions. Rockets can be reserved and mission can be joined. Users can access the personal list in the profile section.",
+    img1: [
+      "./img/projects/spaceTravellers/SpaceTravellers1.png",
+      "./img/projects/spaceTravellers/SpaceTravellers2.png",
+      "./img/projects/spaceTravellers/SpaceTravellers3.png",
+    ],
+    img2: "./img/projects/spaceTravellers/SpaceTravellers1.png",
+    technologies: ["React", "Redux", "Css"],
+    liveDemo: "https://space-travelers-6imy.onrender.com/",
+    sourceCode: "https://github.com/george827/space-travelers-hub-react-redux",
+    title1: "Space Travelers",
+    title2: "Space Travelers",
   },
   {
-    description: 'Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions.',
-    description2: 'Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions',
-    img1: ['img/projects/budget/budgetApp1.png', 'img/projects/budget/budgetApp2.png', 'img/projects/budget/budgetApp3.png'],
-    img2: 'img/projects/budget/budgetApp1.png',
-    technologies: ['Ruby', 'Rails', 'Javascript'],
-    liveDemo: 'https://budget-n0m8.onrender.com/',
-    sourceCode: 'https://github.com/george827/budget-app',
-    title1: 'Budget App',
-    title2: 'Bugget App',
+    description:
+      "An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.",
+    description2:
+      "An online school for software development. Students get to collaborate with other students all around the world, bulding real projects.",
+    img1: [
+      "img/projects/capstone/Cap1.png",
+      "img/projects/capstone/Cap2.png",
+      "img/projects/capstone/Cap3.png",
+    ],
+    img2: "img/projects/capstone/Cap1.png",
+    technologies: ["Html", "Css", "Javascript"],
+    liveDemo: "https://george827.github.io/Capstone-one/",
+    sourceCode: "https://github.com/george827/Capstone-one",
+    title1: "Excel Academy",
+    title2: "Excel Academy",
   },
   {
-    description: 'Space X project is a react-redux project that uses space x API to display a list of rockets and missions. Rockets can be reserved and mission can be joined. Users can access the personal list in the profile section.',
-    description2: 'Space X project is a react-redux project that uses space x API to display a list of rockets and missions. Rockets can be reserved and mission can be joined. Users can access the personal list in the profile section.',
-    img1: ['./img/projects/spaceTravellers/SpaceTravellers1.png', './img/projects/spaceTravellers/SpaceTravellers2.png', './img/projects/spaceTravellers/SpaceTravellers3.png'],
-    img2: './img/projects/spaceTravellers/SpaceTravellers1.png',
-    technologies: ['React', 'Redux', 'Css'],
-    liveDemo: 'https://space-travelers-6imy.onrender.com/',
-    sourceCode: 'https://github.com/george827/space-travelers-hub-react-redux',
-    title1: 'Space Travelers',
-    title2: 'Space Travelers',
+    description:
+      "Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions.",
+    description2:
+      "Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions",
+    img1: [
+      "img/projects/budget/budgetApp1.png",
+      "img/projects/budget/budgetApp2.png",
+      "img/projects/budget/budgetApp3.png",
+    ],
+    img2: "img/projects/budget/budgetApp1.png",
+    technologies: ["Ruby", "Rails", "Javascript"],
+    liveDemo: "https://budget-n0m8.onrender.com/",
+    sourceCode: "https://github.com/george827/budget-app",
+    title1: "Budget App",
+    title2: "Bugget App",
   },
 ];
 
-const section = document.querySelector('.works_section');
-const popup = document.querySelector('.popup-window');
+const section = document.querySelector(".works_section");
+const popup = document.querySelector(".popup-window");
 
 project.forEach((projects) => {
-  const article = document.createElement('article');
-  const divImg = document.createElement('div');
-  const elements = document.createElement('div');
-  const button = document.createElement('button');
+  const article = document.createElement("article");
+  const divImg = document.createElement("div");
+  const elements = document.createElement("div");
+  const button = document.createElement("button");
 
   divImg.innerHTML = `
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -106,10 +138,10 @@ project.forEach((projects) => {
 </div>
   `;
 
-  article.classList.add('card1');
-  button.classList.add('btn-main');
-  elements.classList.add('elements1');
-  button.innerText = 'See Project';
+  article.classList.add("card1");
+  button.classList.add("btn-main");
+  elements.classList.add("elements1");
+  button.innerText = "See Project";
 
   elements.innerHTML += `
   <div class="sideSection">
@@ -131,15 +163,15 @@ project.forEach((projects) => {
   
   `;
   elements.append(button);
-  divImg.classList.add('img-container');
+  divImg.classList.add("img-container");
   article.append(divImg, elements);
   section.append(article);
 
-  button.addEventListener('click', () => {
-    popup.style.display = 'flex';
-    section.style.filter = 'blur(5px)';
-    about.style.filter = 'blur(5px)';
-    document.body.style.overflow = 'hidden';
+  button.addEventListener("click", () => {
+    popup.style.display = "flex";
+    section.style.filter = "blur(5px)";
+    about.style.filter = "blur(5px)";
+    document.body.style.overflow = "hidden";
     popup.innerHTML = `
   <div class="popup-header">
                   <h2 class="head-one h-pop">${projects.title1}</h2>
@@ -171,38 +203,38 @@ project.forEach((projects) => {
                   </div>
               </div>
   `;
-    const cancel = document.querySelector('.cancel-icon');
+    const cancel = document.querySelector(".cancel-icon");
 
-    cancel.addEventListener('click', () => {
-      popup.style.display = 'none';
-      section.style.filter = 'none';
-      about.style.filter = 'none';
-      document.body.style.overflow = 'initial';
+    cancel.addEventListener("click", () => {
+      popup.style.display = "none";
+      section.style.filter = "none";
+      about.style.filter = "none";
+      document.body.style.overflow = "initial";
     });
   });
 });
 
 // validate con
 
-const form = document.querySelector('#form_contact');
+const form = document.querySelector("#form_contact");
 
-const email = document.querySelector('#email');
+const email = document.querySelector("#email");
 
-const errorMsg = document.querySelector('#errorMsg');
+const errorMsg = document.querySelector("#errorMsg");
 
-form.addEventListener('submit', (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   if (email.value === email.value.toLowerCase()) {
     form.submit();
   } else {
-    email.classList.add('active');
-    errorMsg.innerText = 'Please enter the e-mail in lowercase';
+    email.classList.add("active");
+    errorMsg.innerText = "Please enter the e-mail in lowercase";
   }
 });
 
 // preserve dat
-const userName = document.querySelector('#name');
-const userMessage = document.querySelector('#message');
+const userName = document.querySelector("#name");
+const userMessage = document.querySelector("#message");
 
 const storage = window.localStorage;
 
@@ -210,27 +242,30 @@ function storageAvailable(type) {
   let storage;
   try {
     storage = window[type];
-    const x = '__storage_test__';
+    const x = "__storage_test__";
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;
   } catch (e) {
-    return e instanceof DOMException && (
-    // everything except Firefox
-      e.code === 22
-          // Firefox
-          || e.code === 1014
-          || e.name === 'QuotaExceededError'
-          // Firefox
-          || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
-          // acknowledge QuotaExceededError only if there's something already stored
-          && (storage && storage.length !== 0);
+    return (
+      e instanceof DOMException &&
+      // everything except Firefox
+      (e.code === 22 ||
+        // Firefox
+        e.code === 1014 ||
+        e.name === "QuotaExceededError" ||
+        // Firefox
+        e.name === "NS_ERROR_DOM_QUOTA_REACHED") &&
+      // acknowledge QuotaExceededError only if there's something already stored
+      storage &&
+      storage.length !== 0
+    );
   }
 }
 
 function retrieveData() {
-  if (storageAvailable('localStorage')) {
-    const userDataString = storage.getItem('formUserData');
+  if (storageAvailable("localStorage")) {
+    const userDataString = storage.getItem("formUserData");
     const formUserData = JSON.parse(userDataString);
     return formUserData;
   }
@@ -255,39 +290,39 @@ fillForm();
 
 const userData = {};
 
-userMessage.addEventListener('change', () => {
+userMessage.addEventListener("change", () => {
   userData.name = userName.value;
   userData.email = email.value;
   userData.message = userMessage.value;
-  storage.setItem('formUserData', JSON.stringify(userData));
+  storage.setItem("formUserData", JSON.stringify(userData));
 });
 
-email.addEventListener('change', () => {
+email.addEventListener("change", () => {
   userData.name = userName.value;
   userData.email = email.value;
   userData.message = userMessage.value;
-  storage.setItem('formUserData', JSON.stringify(userData));
+  storage.setItem("formUserData", JSON.stringify(userData));
 });
 
-userName.addEventListener('change', () => {
+userName.addEventListener("change", () => {
   userData.name = userName.value;
   userData.email = email.value;
   userData.message = userMessage.value;
-  storage.setItem('formUserData', JSON.stringify(userData));
+  storage.setItem("formUserData", JSON.stringify(userData));
 });
 
 // skill section
-langRotate.addEventListener('click', () => {
-  langRotate.classList.toggle('right');
-  langList.classList.toggle('hide-display');
+langRotate.addEventListener("click", () => {
+  langRotate.classList.toggle("right");
+  langList.classList.toggle("hide-display");
 });
 
-frameworks.addEventListener('click', () => {
-  frameworks.classList.toggle('show-more');
-  frameworkList.classList.toggle('hide-display');
+frameworks.addEventListener("click", () => {
+  frameworks.classList.toggle("show-more");
+  frameworkList.classList.toggle("hide-display");
 });
 
-skills.addEventListener('click', () => {
-  skills.classList.toggle('show-more');
-  skillList.classList.toggle('hide-display');
+skills.addEventListener("click", () => {
+  skills.classList.toggle("show-more");
+  skillList.classList.toggle("hide-display");
 });
